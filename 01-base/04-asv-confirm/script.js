@@ -11,6 +11,21 @@
 
 (function() {
 
-    // your code here
+while (true) {
+    let age = prompt("Quel age avez-vous ?");
+    let gender = prompt("Etes-vous un homme ou une femme ?");
+    let town = prompt("Où habitez-vous ?");
 
+    alert(
+        "Vous avez " + age + " ans.\n" +
+        "Vous etes un(e) " + gender + ".\n" +
+        "Vous habitez à " + town + "."
+    );
+
+    let confirm = prompt("Vous confirmez ? (oui ou non)");
+
+    if (confirm === "oui") {
+        break;
+    }
+}
 })();

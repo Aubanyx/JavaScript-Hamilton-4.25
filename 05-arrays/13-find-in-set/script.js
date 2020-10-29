@@ -23,4 +23,16 @@
     ]);
 
     // your code here
+    let button = document.getElementById("run");
+    button.addEventListener ("click", function () {
+
+        console.log(people.size);
+
+        console.log("Est-ce que Alexandre fait partie du groupe ? : " + people.has("Alexandre"));
+
+
+
+
+    });
+
 })();

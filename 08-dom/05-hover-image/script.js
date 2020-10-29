@@ -13,4 +13,16 @@
 
     // your code here
 
+    let dataHover = document.querySelector(".material > figure > img").getAttribute("data-hover");
+    let srcImage = document.querySelector(".material > figure > img").getAttribute("src");
+    let image = document.querySelector(".material > figure > img");
+
+    image.addEventListener('mouseover', function() {
+        this.src = dataHover;
+    });
+
+    image.addEventListener('mouseout', function() {
+        this.src = srcImage;
+    });
+
 })();

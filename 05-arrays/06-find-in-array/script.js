@@ -90,5 +90,15 @@
     ];
 
     // your code here
+    let button = document.getElementById("run");
+    button.addEventListener ("click", function () {
+
+        people.forEach((name, index) => {
+            if (name["firstname"] == "Jean" && name["lastname"] == "Dupont") {
+                console.log(name["email"], index);
+            }
+        });
+
+    });
 
 })();

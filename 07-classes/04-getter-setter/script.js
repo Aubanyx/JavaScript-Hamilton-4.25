@@ -11,4 +11,36 @@
 
 (() => {
     // your code here
+
+    class Person {
+        constructor(firstname, lastname) {
+            this.firstname = firstname;
+            this.lastname = lastname;
+        }
+
+        get getName(){
+            return this.firstname + " " + this.lastname;
+        }
+
+        set setName(newName){
+
+            let nameDivided = newName.split(' ');
+
+            this.firstname = nameDivided[0];
+            this.lastname = nameDivided[1];
+        }
+    }
+
+    let button = document.getElementById("run");
+    button.addEventListener ("click", function () {
+
+        let auban = new Person("Auban", "Labie");
+        console.log(auban.getName);
+
+        auban.setName = "Jonathan Maillard";
+        console.log(auban.getName);
+
+    });
+
+
 })();

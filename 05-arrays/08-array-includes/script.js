@@ -27,5 +27,18 @@
     ];
 
     // your code here
+    let button = document.getElementById("run");
+    button.addEventListener ("click", function () {
+
+        fruits.forEach((fruit) => {
+            if (fruits.find(element => element === "apple")) {
+                console.log("Yes");
+            }
+            else {
+                console.log("No");
+            }
+        });
+
+    });
 
 })();

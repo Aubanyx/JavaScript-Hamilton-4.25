@@ -13,4 +13,14 @@
 
     // your code here
 
+    let data = document.getElementById("source").getAttribute("data-image");
+    let figure = document.getElementById("target");
+    let image = document.createElement("img");
+    image.src = data;
+
+    figure.append(image);
+
+    console.log(data);
+    console.log(image);
+
 })();

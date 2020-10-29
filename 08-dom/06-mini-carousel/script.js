@@ -20,5 +20,22 @@
     ];
 
     // your code here
+    let i = 0;
+
+    let button = document.getElementById("next");
+    button.addEventListener ("click", function () {
+
+        let image = document.querySelector(".material > figure > img");
+
+        if (i === gallery.length - 1) {
+            i = 0;
+        }
+        else {
+            i++;
+        }
+
+        image.src = gallery[i];
+
+    });
 
 })();

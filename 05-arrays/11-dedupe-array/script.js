@@ -29,5 +29,19 @@
     ];
 
     // your code here
+    let button = document.getElementById("run");
+    button.addEventListener ("click", function () {
+
+
+        const uniqueSet = new Set(fruits);
+        const uniqueSetToArray = [...uniqueSet];
+
+
+        console.log(uniqueSetToArray);
+        uniqueSetToArray.forEach(fruit => console.log(fruit));
+
+
+
+    });
 
 })();

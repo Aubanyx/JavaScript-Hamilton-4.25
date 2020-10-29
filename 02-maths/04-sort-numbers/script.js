@@ -17,6 +17,12 @@
 
         // your code here
 
+        let a = document.getElementById("numbers").value.split(',');
+
+        a.sort((a, b) => a - b);
+
+        alert(a);
+
     });
 
 })();

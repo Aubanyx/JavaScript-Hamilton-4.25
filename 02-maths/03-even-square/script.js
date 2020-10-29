@@ -13,7 +13,15 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+        let j = 1;
+        while (true) {
+            let i = Math.pow(j, 2);
+            j++;
+            if (i >= 21) {
+                break;
+            }
+            alert(i);
+        }
 
     });
 

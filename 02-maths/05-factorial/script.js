@@ -17,6 +17,15 @@
 
         // your code here
 
+        function factorielle(n = document.getElementById("number").value){
+            if ((n === 0) || (n === 1))
+                return 1;
+            else
+                return (n * factorielle(n - 1));
+        }
+
+        alert(factorielle());
+
     });
 
 })();

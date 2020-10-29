@@ -11,6 +11,24 @@
 
 (function() {
 
-    // your code here
+
+    function getSelectValue(selectId)
+    {
+        let selectElmt = document.getElementById(selectId);
+
+        return selectElmt.value;
+    }
+
+
+
+    document.getElementById("run").addEventListener("click", function() {
+        let day = getSelectValue('dob-day');
+        let month = getSelectValue('dob-month');
+        let year = getSelectValue('dob-year');
+
+        alert("Ton anniversaire est le " + day + " " + month + " " + year);
+    });
+
+
 
 })();

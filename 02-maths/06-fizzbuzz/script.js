@@ -11,6 +11,26 @@
 
 (function() {
 
-    // your code here
+// multiple de 3 : fizz
+// multiple de 5 : buzz
+// multiple de 3 et de 5: fizzbuzz
+
+
+    for (let x = 1; x <= 100; x++) {
+        if(x % 3 && x % 5) {
+            console.log(x);
+        } else {
+            if(x % 3 === 0 && x % 5 === 0) {
+                console.log("fizzbuzz");
+            }
+            else if(x % 3 === 0) {
+                console.log("fizz");
+            }
+            else if(x % 5 === 0) {
+                console.log("buzz");
+            }
+        }
+    }
+
 
 })();

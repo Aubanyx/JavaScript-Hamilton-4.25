@@ -12,5 +12,14 @@
 (function() {
 
     // your code here
+    let button = document.getElementById("run");
+
+    button.addEventListener ("click", function () {
+
+        let background = document.body;
+        let color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+
+        background.style.background = color;
+    })
 
 })();

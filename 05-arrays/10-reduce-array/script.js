@@ -91,4 +91,21 @@
 
     // your code here
 
+    let button = document.getElementById("run");
+    button.addEventListener ("click", function () {
+
+        let ageArray = [];
+        const sum = arr => arr.reduce((a, b) => a + b, 0);
+
+        people.forEach((person) => {
+
+            ageArray.push(person["age"]);
+
+        });
+
+        let sumAgePeople = sum(ageArray);
+        console.log(sumAgePeople);
+
+    });
+
 })();

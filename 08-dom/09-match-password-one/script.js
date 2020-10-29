@@ -13,4 +13,23 @@
 
     // your code here
 
+    let button = document.getElementById("run");
+    button.addEventListener ("click", function () {
+
+        let mdpOne = document.getElementById("pass-one");
+        let mdpTwo = document.getElementById("pass-two");
+
+
+        if (mdpOne.value === mdpTwo.value) {
+            mdpOne.style.borderColor = "green";
+            mdpTwo.style.borderColor = "green";
+        }
+        else {
+            mdpOne.style.borderColor = "red";
+            mdpTwo.style.borderColor = "red";
+
+        }
+
+    });
+
 })();

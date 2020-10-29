@@ -90,5 +90,16 @@
     ];
 
     // your code here
+    let button = document.getElementById("run");
+    button.addEventListener ("click", function () {
+
+        let newPeople = people.filter(
+            people => people["age"] > 18
+        );
+
+        // console.log(newPeople);
+        newPeople.forEach(newPeople => console.log(newPeople));
+
+    });
 
 })();

@@ -17,4 +17,16 @@
         }
     }
     // your code here
+
+    let button = document.getElementById("run");
+    button.addEventListener ("click", function () {
+
+        const cat1 = new Cat("Skitty", 9);
+        const cat2 = new Cat("Pixel", 6);
+
+        console.log(cat1.name + ", " + cat1.age + " ans");
+        console.log(cat2.name + ", " + cat2.age + " ans");
+
+    });
+
 })();

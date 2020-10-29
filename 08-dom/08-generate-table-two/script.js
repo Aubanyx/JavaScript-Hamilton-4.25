@@ -13,4 +13,35 @@
 
     // your code here
 
+    let target = document.getElementById("target");
+    let tableau = document.createElement("table");
+    let thead = document.createElement("thead");
+    let tbody = document.createElement("tbody");
+    let theadTr = document.createElement("tr");
+
+
+    target.append(tableau);
+    tableau.append(thead);
+    tableau.append(tbody);
+    thead.append(theadTr);
+
+
+    for (let i = 0; i <= 9; i++) {
+        let th = document.createElement("th");
+        theadTr.append(th);
+        th.appendChild(document.createTextNode("Table " + (i + 1)));
+    }
+
+    for (let i = 0; i <= 9; i++) {
+        let tr = document.createElement("tr");
+        tbody.append(tr);
+
+        for (let j = 0; j <= 9; j++) {
+            let td = document.createElement("td");
+            let resultat = (i + 1) * (j + 1);
+            td.appendChild(document.createTextNode((i + 1) + " x " + (j + 1) + " = " + resultat));
+            tr.append(td);
+        }
+    }
+
 })();

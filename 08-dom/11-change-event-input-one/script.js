@@ -13,4 +13,19 @@
 
     // your code here
 
+    let counter = document.getElementById("counter");
+    let mdpOne = document.getElementById("pass-one");
+    let nbreCara = mdpOne.value.length;
+
+    mdpOne.addEventListener ("keyup", function () {
+        nbreCara = mdpOne.value.length;
+        counter.textContent = nbreCara + "/10";
+
+
+        if (nbreCara === 10) {
+            mdpOne.setAttribute("readonly", true)
+        }
+
+    });
+
 })();

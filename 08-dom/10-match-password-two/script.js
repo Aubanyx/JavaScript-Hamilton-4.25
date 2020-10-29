@@ -13,4 +13,22 @@
 
     // your code here
 
+    let button = document.getElementById("run");
+    button.addEventListener ("click", function () {
+
+        let mdpOne = document.getElementById("pass-one");
+        let mdpTwo = document.getElementById("pass-two");
+
+
+        if (mdpOne.value !== mdpTwo.value) {
+            mdpOne.classList.add("error");
+            mdpTwo.classList.add("error");
+        }
+        else {
+            mdpOne.classList.remove("error");
+            mdpTwo.classList.remove("error");
+
+        }
+    });
+
 })();

@@ -11,4 +11,20 @@
 
 (() => {
     // your code here
+    let button = document.getElementById("run");
+    button.addEventListener ("click", function () {
+
+
+        const objects = {
+            lastname : "Labie",
+            firstname : "Auban",
+            age : 26,
+            city : "Vottem",
+            country : "Belgium"
+        }
+
+        console.log(objects);
+
+    });
+
 })();

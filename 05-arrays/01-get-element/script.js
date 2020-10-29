@@ -27,5 +27,10 @@
     ];
 
     // your code here
+    let button = document.getElementById("run");
+    button.addEventListener ("click", function () {
+        alert(fruits[3]);
+    });
+
 
 })();

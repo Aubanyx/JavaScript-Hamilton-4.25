@@ -27,4 +27,33 @@
         user: null,
     };
     // your code here
+
+    let button = document.getElementById("run");
+    button.addEventListener ("click", function () {
+
+
+        // computers.forEach(item => {
+        //     if(item.hasOwnProperty('available') === false){
+        //         item = Object.defineProperty(item, 'availabe', {value: true});
+        //     }
+        //
+        //     if(item.hasOwnProperty('os') === false){
+        //         item = Object.defineProperty(item, 'os', {value: "linux"});
+        //     }
+        //
+        //     if(item.hasOwnProperty('user') === false){
+        //         item = Object.defineProperty(item, 'user', {value: null});
+        //     }
+        // });
+        // console.log(computers);
+
+
+        computers.forEach((computer) => {
+            computer.user = computer.user || defaultProps.user;
+            computer.os = computer.os || defaultProps.os;
+            computer.available = computer.available || defaultProps.available;
+
+            console.table(computer);
+        });
+    });
 })();

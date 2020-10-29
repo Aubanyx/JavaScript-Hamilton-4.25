@@ -13,4 +13,15 @@
 
     // your code here
 
+    let target = document.getElementById("target");
+    let tableau = document.createElement("table");
+
+    for (let i = 0; i <= 9; i++) {
+        let tr = document.createElement("tr");
+        let td = document.createElement("td");
+        td.appendChild(document.createTextNode("text " + i));
+        target.append(tr);
+        tr.append(td);
+    }
+
 })();

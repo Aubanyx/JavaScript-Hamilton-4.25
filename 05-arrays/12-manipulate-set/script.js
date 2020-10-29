@@ -24,4 +24,17 @@
     ]);
 
     // your code here
+    let button = document.getElementById("run");
+    button.addEventListener ("click", function () {
+
+        fruits.delete("apple");
+        fruits.delete("cherry");
+        fruits.add("banana").add("kiwi");
+
+        console.log(fruits);
+
+        fruits.forEach(fruit => console.log(fruit));
+
+    });
+
 })();
