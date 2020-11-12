@@ -11,4 +11,31 @@
 
 (() => {
     // your code here
+
+    document.getElementById('run').addEventListener("click", () => {
+
+        window.lib.getPosts((error, posts) => {
+            if (error) {
+                console.error(error);
+            }
+            else {
+                let i = 0;
+                posts.forEach(post => {
+                    window.lib.getComments(post.id, (error, comments) => {
+                        if (error) {
+                            console.error(error);
+                        }
+                        else {
+                            post.comments = comments;
+                        }
+                        if (++i === posts.length) {
+                            console.log(posts);
+                        }
+                    })
+                })
+            }
+        });
+
+    });
+
 })();
