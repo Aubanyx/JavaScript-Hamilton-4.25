@@ -11,4 +11,17 @@
 
 (() => {
     // your code here
+    async function promiseGetPosts() {
+        let posts = await window.lib.getPosts();
+        try {
+            console.log(posts);
+        } catch {
+            console.error(error);
+        }
+    }
+
+    document.getElementById("run").addEventListener("click", () => {
+        promiseGetPosts();
+    });
+
 })();

@@ -11,4 +11,18 @@
 
 (() => {
     // your code here
+
+    async function promiseGetPersons() {
+        const persons = await window.lib.getPersons();
+        try {
+            console.log(persons);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    document.getElementById("run").addEventListener("click", () => {
+        promiseGetPersons();
+    });
+
 })();
